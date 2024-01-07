@@ -7,13 +7,16 @@ const Cart = ({ cartItems }) => {
       {cartItems.length === 0 ? (
         <p>Your cart is empty</p>
       ) : (
-        <ul>
-          {cartItems.map((item, index) => (
-            <li key={index}>
-              {item.name} - ${item.price}
-            </li>
-          ))}
-        </ul>
+        <div className='productContainer'>
+        {cartItems.map((item, index) => (
+          <div className='productItem' key={index}>
+            <img src={item.image} alt={item.name} />
+            <h3>{item.name}</h3>
+            <p>${item.price}</p>
+          </div>
+        ))}
+      </div>
+        
       )}
       {/* Add other cart-related functionality such as total price, checkout button, etc. */}
     </div>
