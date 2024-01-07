@@ -1,7 +1,7 @@
 import React from "react";
 import Heroares from "../Component/Heroares";
 import MidSection from "../Component/MidSection";
-import Testimonial from "../Component/Testimonial";
+// import Testimonial from "../Component/Testimonial";
 import Footer from "../Component/Footer";
 
 const Home = () => {
@@ -9,7 +9,7 @@ const Home = () => {
     <div>
       <Heroares />
       <MidSection />
-      <Testimonial />
+      {/* <Testimonial /> */}
       <Footer />
     </div>
   );

@@ -4,7 +4,7 @@ import "./styles/FooterStyle.css";
 const Footer = () => {
   return (
     <div>
-      <footer class="footer">
+      <div class="footer">
         <div class="footer-container">
           <div class="footer-row">
             <div class="footer-col">
@@ -59,7 +59,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </div>
     </div>
   );
 };

@@ -1,5 +1,6 @@
 import React from "react";
 import "./styles/MidSection.css";
+import MidBanner from "./images/pexels-павел-сорокин-2324837.jpg";
 
 const MidSection = () => {
   return (
@@ -105,10 +106,7 @@ const MidSection = () => {
           <button id="home-register">REGISTER NOW</button>
         </div>
         <div class="home-mid-banner-image">
-          <img
-            src="./home_image/pexels-павел-сорокин-2324837.jpg"
-            alt="image"
-          />
+          <img src={MidBanner} alt="image" />
         </div>
       </div>
     </div>
