@@ -1,6 +1,10 @@
 import React from 'react';
 
-const Cart = ({ cartItems }) => {
+const Cart = ({ cartItems,removeFromCart  }) => {
+  const handleRemove = (index) => {
+    removeFromCart(index);
+  };
+
   return (
     <div>
       <h2>Cart</h2>
@@ -13,6 +17,7 @@ const Cart = ({ cartItems }) => {
             <img src={item.image} alt={item.name} />
             <h3>{item.name}</h3>
             <p>${item.price}</p>
+            <button onClick={() => handleRemove(index)}>Remove</button>
           </div>
         ))}
       </div>
