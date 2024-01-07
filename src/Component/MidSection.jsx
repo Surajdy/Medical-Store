@@ -1,6 +1,20 @@
 import React from "react";
 import "./styles/MidSection.css";
 import MidBanner from "./images/pexels-павел-сорокин-2324837.jpg";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faStethoscope,
+  faFlaskVial,
+  faHospital,
+  faPills,
+  faProcedures,
+  faHeartbeat,
+  faHeart,
+  faEye,
+  faBrain,
+  faTooth,
+  faLungs,
+} from "@fortawesome/free-solid-svg-icons";
 
 const MidSection = () => {
   return (
@@ -15,27 +29,30 @@ const MidSection = () => {
         </p>
         <div class="home-box-container">
           <div class="home-box">
-            <i class="fa-solid fa-stethoscope"></i>
+            <FontAwesomeIcon icon={faStethoscope} size="2xl" />
             <h3>Online Consultation</h3>
           </div>
           <div class="home-box">
-            <i class="fa-regular fa-hospital"></i>
+            <FontAwesomeIcon icon={faHospital} size="2xl" />
             <h3>Hospital</h3>
           </div>
           <div class="home-box">
-            <i class="fa-solid fa-flask-vial"></i>
+            <FontAwesomeIcon icon={faFlaskVial} size="2xl" />
             <h3>Pathology Tests</h3>
           </div>
           <div class="home-box">
-            <i class=" fas fa-pills"></i>
+            <FontAwesomeIcon icon={faPills} size="2xl" />
+            <i class=" fas "></i>
             <h3>Medicines</h3>
           </div>
           <div class="home-box">
-            <i class=" fas fa-procedures"></i>
+            <FontAwesomeIcon icon={faProcedures} size="2xl" />
+            <i class=" fas "></i>
             <h3>Bed Facility</h3>
           </div>
           <div class="home-box">
-            <i class=" fas fa-heartbeat"></i>
+            <FontAwesomeIcon icon={faHeartbeat} size="2xl" />
+            <i class=" fas "></i>
             <h3>Total Care</h3>
           </div>
         </div>
@@ -72,27 +89,33 @@ const MidSection = () => {
         </p>
         <div class="home-box-container">
           <div class="home-box">
-            <i class="fa-solid fa-heart"></i>
+            <FontAwesomeIcon icon={faHeart} size="2xl" />
+
             <h3>Cardiologists</h3>
           </div>
           <div class="home-box">
-            <i class="fa-solid fa-eye"></i>
+            <FontAwesomeIcon icon={faEye} size="2xl" />
+
             <h3>Eye Specialists</h3>
           </div>
           <div class="home-box">
-            <i class="fa-solid fa-stethoscope"></i>
+            <FontAwesomeIcon icon={faStethoscope} size="2xl" />
+
             <h3>Prdiatricians</h3>
           </div>
           <div class="home-box">
-            <i class="fa-solid fa-brain"></i>
+            <FontAwesomeIcon icon={faBrain} size="2xl" />
+
             <h3>Psychiatrists</h3>
           </div>
           <div class="home-box">
-            <i class="fa-solid fa-tooth"></i>
+            <FontAwesomeIcon icon={faTooth} size="2xl" />
+
             <h3>Dentists</h3>
           </div>
           <div class="home-box">
-            <i class="fa-solid fa-lungs"></i>
+            <FontAwesomeIcon icon={faLungs} size="2xl" />
+
             <h3>Pulmonologists</h3>
           </div>
         </div>

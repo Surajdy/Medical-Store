@@ -2,6 +2,8 @@ import React from "react";
 import "./styles/styles.css";
 import { Component } from "react";
 import Logo from "./images/LOGO.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 
 const Navbar = () => {
   return (
@@ -27,7 +29,7 @@ const Navbar = () => {
       <ul class="navbar-right">
         <a href="">
           <li>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <FontAwesomeIcon icon={faCartShopping} />
           </li>
         </a>
 
