@@ -42,7 +42,7 @@ const Products = ({ setCartItems, cartItems }) => {
     
     <div className='productPage'>
          <div className='headingContainer'>
-          <h1 style={{color: "#00525D"}}>Most Recommended</h1>
+          <h1 style={{color: "#00525D" ,marginBottom:"50px"}}>Most Recommended</h1>
           <div>
             <h1>Products</h1>
             <button onClick={() => filterProductsByCategory('All')}>View All</button>

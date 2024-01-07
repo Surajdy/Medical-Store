@@ -1,5 +1,9 @@
+import React from "react";
 import { Link } from "react-router-dom"
-
+import "./Navbar.css";
+import Logo from "../Component/images/LOGO.png";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShop ,faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 function Navbar() {
 
     const Links=[
@@ -14,13 +18,47 @@ function Navbar() {
 
     ]
     return(
-        <div className = "navbar" style={{display:"flex",flexDirection:"row",justifyContent:"space-around",padding:"20px",color:"#00525D",fontWeight:"bolder"}}>
-           {Links.map((link)=>(
-            <Link to={link.path} key={link.path}>
-                {link.title}
-            </Link>
-           ))}
-        </div>
+        <div id="container">
+        <ul class="navbar-left">
+          <a href="index.html">
+            <img src={Logo} alt="LOGO" />
+          </a>
+          <Link to={"/"}>
+          <li> Medicines </li>
+          </Link>
+          <Link to={"/"}>
+          <li> Doctor </li>
+          </Link>
+          <Link to={"/Products"}>
+          <li> Pharmacy </li>
+          </Link>
+          <Link to={"/Login"}>
+          <li> Login </li>
+          </Link>
+          
+        </ul>
+  
+        <ul class="navbar-right">
+         
+          <Link to={"/Cart"} className="a">
+           <li>
+           <FontAwesomeIcon icon={faShop}/>
+            </li>
+          </Link>
+          <Link to={"/Signup"} className="a">
+           <li>
+          <FontAwesomeIcon icon={faRightToBracket} />
+            </li>
+          </Link>
+
+          <Link className="b">
+          <li> Consult Now </li>
+          </Link>
+           
+         
+        </ul>
+      </div>
+
     )
 }
 

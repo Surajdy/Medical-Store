@@ -1,9 +1,18 @@
-import React from 'react'
+import React from "react";
+import Heroares from "../Component/Heroares";
+import MidSection from "../Component/MidSection";
+// import Testimonial from "../Component/Testimonial";
+import Footer from "../Component/Footer";
 
-export default function Home() {
+const Home = () => {
   return (
     <div>
-      <h1 className = "home_page" >Welcome to Home Page</h1>
+      <Heroares />
+      <MidSection />
+      {/* <Testimonial /> */}
+      <Footer />
     </div>
-  )
-}
+  );
+};
+
+export default Home;
