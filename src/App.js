@@ -5,7 +5,7 @@ import { Navbar } from "./Routes/Navbar";
 function App() {
   return <div className="App">
      <Navbar/>
-    <AllRoutes/>
+    <AllRoutes />
    
   </div>;
 }
