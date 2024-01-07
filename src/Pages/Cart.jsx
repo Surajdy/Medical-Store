@@ -1,20 +1,26 @@
-// Cart.js
 import React from 'react';
 
 const Cart = ({ cartItems }) => {
   return (
     <div>
       <h2>Cart</h2>
-      <ul>
+      {cartItems.length === 0 ? (
+        <p>Your cart is empty</p>
+      ) : (
+        <div className='productContainer'>
         {cartItems.map((item, index) => (
-          <li key={index}>
-            {item.name} - ${item.price}
-          </li>
+          <div className='productItem' key={index}>
+            <img src={item.image} alt={item.name} />
+            <h3>{item.name}</h3>
+            <p>${item.price}</p>
+          </div>
         ))}
-      </ul>
+      </div>
+        
+      )}
       {/* Add other cart-related functionality such as total price, checkout button, etc. */}
     </div>
   );
-}
+};
 
 export default Cart;
