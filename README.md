@@ -46,20 +46,20 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 - ## <span style="color:blue"> Home Page </span>
 
-<img width="377" alt="Home page" src="./images/Jatin1.png">
+<img width="377" alt="Home page" src="./images/1.png">
 
 
 
 - ## <span style="color:blue"> Product Pages</span>
 
-<img width="400" alt="zms 1" src="./images/Jatin2.png">
-<img width="400" alt="zms 1" src="./images/Jatin3.png">
+<img width="400" alt="zms 1" src="./images/2.png">
+<img width="400" alt="zms 1" src="./images/3.png">
 
 
 - ## <span style="color:blue"> Product Details Page</span>
 
- <img width="391" alt="zms footer" src="./images/jatin4.png">
-  <img width="391" alt="zms footer" src="./images/jatin5.png">
+ <img width="391" alt="zms footer" src="./images/4.png">
+  <img width="391" alt="zms footer" src="./images/5.png">
 
 
  
