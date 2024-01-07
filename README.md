@@ -46,15 +46,15 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 - ## <span style="color:blue"> Home Page </span>
 
-<img width="377" alt="Home page" src="./capture.png">
-<img width="400" alt="zms 1" src="./capture1.png">
+<img width="377" alt="Home page" src="./Capture.png">
+<img width="400" alt="zms 1" src="./Capture1.png">
 
 
 - ## <span style="color:blue"> Product Pages</span>
 
-<img width="400" alt="product" src="./capture2.png">
+<img width="400" alt="product" src="./Capture2.png">
 
- <img width="391" alt="product" src="./capture3.png">
+ <img width="391" alt="product" src="./Capture3.png">
 
 
 
