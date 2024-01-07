@@ -46,7 +46,7 @@ This entire journey of making the project was awesome. We have learned lots of t
 
 - ## <span style="color:blue"> Home Page </span>
 
-<img width="377" alt="Home page" src="./Capture.png">
+<img width="377" alt="Home page" src="./Capture.PNG">
 <img width="400" alt="zms 1" src="./Capture1.png">
 
 
