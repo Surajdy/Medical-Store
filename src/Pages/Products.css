@@ -1,0 +1,100 @@
+.productPage{
+  padding: 5%;
+}
+.headingContainer{
+  text-align: start;
+  
+}
+.headingContainer div{
+  margin-top: -50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.headingContainer div h1{
+  font-size: 60px;
+}
+.headingContainer div button{
+  width: 100px;
+  height: 40px;
+  background-color: #F8FDED;
+  border: none;
+  color: #00525D;
+  font-weight: bolder;
+  cursor: pointer;
+}
+
+.mainContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  gap:2%;
+}
+.filterContainer{
+ width: 25%; 
+ height: 100%;
+ padding: 2%;
+ display: flex;
+ flex-direction: column;
+
+ background-color:#F5F5F5;
+}
+.filter1{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1%;
+ 
+}
+
+.filterContainer h1{
+  color: #B3B2B2;
+} 
+.filter1 h1{
+  font-size: 20px;
+  color: black;
+}
+.filter1 button{
+  background-color: transparent;
+border: none;
+font-size: 20px;
+cursor: pointer;
+}
+/* productcontainer */
+.productContainer{
+ width: 75%;
+
+ display: grid;
+ justify-content: space-between;
+ grid-template-columns:  repeat(auto-fit, minmax(300px, auto));;
+
+}
+.productContainer .productItem{
+ 
+  border: 2px solid rgb(212, 217, 217);
+
+  margin: 0 20px 20px 20px;
+  padding: 10px;
+
+}
+.productItem .like {
+  color: red;
+  font-size: 20px;
+  text-align: end;
+}
+.productItem img{
+  margin-top: 10px;
+  width: 70%;
+}
+.productItem button{
+  margin-bottom: 20px;
+  width: 100%;
+  height: 40px;
+  font-weight: bolder;
+  background-color: #00525D ;
+  border: transparent;
+  color: white;
+  cursor: pointer;
+}
