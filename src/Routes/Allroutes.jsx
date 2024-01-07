@@ -9,7 +9,11 @@ import Checkout from '../Pages/Checkout';
 
 function AllRoutes() {
   const [cartItems, setCartItems] = useState([]);
-
+ 
+  const removeFromCart = (indexToRemove) => {
+    const updatedCartItems = cartItems.filter((item, index) => index !== indexToRemove);
+    setCartItems(updatedCartItems);
+  };
   return (
     <Routes>
       <Route path="/" element={<Home />} />
@@ -21,7 +25,7 @@ function AllRoutes() {
       />
       <Route
         path="/cart"
-        element={<Cart cartItems={cartItems} />}
+        element={<Cart cartItems={cartItems} removeFromCart={removeFromCart} />}
       />
       <Route
         path="/checkout"
