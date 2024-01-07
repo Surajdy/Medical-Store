@@ -13,7 +13,7 @@ function Navbar() {
 
     ]
     return(
-        <div className = "navbar" >
+        <div className = "navbar" style={{display:"flex",flexDirection:"row",justifyContent:"space-between"}}>
            {Links.map((link)=>(
             <Link to={link.path} key={link.path}>
                 {link.title}
