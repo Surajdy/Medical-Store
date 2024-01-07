@@ -1,44 +1,43 @@
-
 import React, { useState, useEffect } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHeart } from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 
 import "./Products.css";
-const Products = () => {
+
+const Products = ({ setCartItems, cartItems }) => {
   const [products, setProducts] = useState([]);
+  const [filteredProducts, setFilteredProducts] = useState([]);
+  const navigate = useNavigate();
 
-  const [cartItems, setCartItems] = useState([]);
- const [filteredProducts, setFilteredProducts] = useState([]);
-  
- const fetchData = async () => {
-  try {
-    const response = await fetch('http://localhost:8080/products');
-    const data = await response.json();
-    setProducts(data);
-    setFilteredProducts(data);
-  } catch (error) {
-    console.error('Error fetching products:', error);
-  }
-};
- 
+  const fetchData = async () => {
+    try {
+      const response = await fetch('http://localhost:8080/products');
+      const data = await response.json();
+      setProducts(data);
+      setFilteredProducts(data);
+    } catch (error) {
+      console.error('Error fetching products:', error);
+    }
+  };
 
-useEffect(() => {
-  fetchData();
-}, []);
+  useEffect(() => {
+    fetchData();
+  }, []);
 
-const addToCart = (product) => {
-  setCartItems([...cartItems, product]);
-};
+  const addToCart = (product) => {
+    setCartItems([...cartItems, product]); 
+    navigate('/cart');
+  };
 
-const filterProductsByCategory = (category) => {
-  if (category === 'All') {
-    setFilteredProducts(products);
-  } else {
-    const filtered = products.filter((product) => product.category === category);
-    setFilteredProducts(filtered);
-  }
-};
-
+  const filterProductsByCategory = (category) => {
+    if (category === 'All') {
+      setFilteredProducts(products);
+    } else {
+      const filtered = products.filter((product) => product.category === category);
+      setFilteredProducts(filtered);
+    }
+  };
   return (
     
     <div className='productPage'>
@@ -109,17 +108,17 @@ const filterProductsByCategory = (category) => {
               </div>
             </div> 
             <div className='productContainer'>
-                 {filteredProducts.map((product) => (
-                  <div className='productItem' key={product.id}>
-                  <div className='like'> <FontAwesomeIcon icon={faHeart} /></div>
-                  <img src={product.image} alt={product.name} />
-                  <h3>{product.name}</h3>
-                  <p>${product.price}</p>
-                  <button onClick={() => addToCart(product)}>Add to Cart</button>
-                </div>
-                ))}
-             
-            </div>
+        {filteredProducts.map((product) => (
+          <div className='productItem' key={product.id}>
+            <div className='like'> <FontAwesomeIcon icon={faHeart} /></div>
+            <img src={product.image} alt={product.name} />
+            <h3>{product.name}</h3>
+            <p>${product.price}</p>
+            {/* Ensure the correct function is being called */}
+            <button onClick={() => addToCart(product)}>Add to Cart</button>
+          </div>
+        ))}
+      </div>
           </div>
               
       </div>
