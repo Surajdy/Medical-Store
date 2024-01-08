@@ -129,7 +129,7 @@ const MidSection = () => {
           <button id="home-register">REGISTER NOW</button>
         </div>
         <div class="home-mid-banner-image">
-          <img src={MidBanner} alt="image" />
+          <img src={MidBanner} alt="a" />
         </div>
       </div>
     </div>

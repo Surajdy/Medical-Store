@@ -6,13 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShop ,faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 function Navbar() {
 
-    const Links =[
-        {title:"Home",path:"/"},
-        {title:"Products",path:"/Products"},
-        {title:"Cart",path:"/Cart"},
-        {title:"LoginSignupContainer",path:"/LoginSignupContainer"},
-   
-    ]
+
     return(
         <div id="container">
         <ul class="navbar-left">

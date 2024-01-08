@@ -13,7 +13,7 @@ const Heroares = () => {
         </div>
         <div class="home-banner-wordings">
           <div class="right-content-image">
-            <img src={HeroImage} />
+            <img src={HeroImage} alt=""/>
           </div>
         </div>
       </div>
