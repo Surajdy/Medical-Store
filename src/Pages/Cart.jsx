@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import "../components/cart.css"
 
 const Cart = ({ cartItems,setCartItems,handleChangeQuantity,handleRemove }) => {
   const [price, setPrice] = useState(0);
@@ -31,10 +32,10 @@ useEffect(()=>{
       {cartItems.length === 0 ? (
         <p>Your cart is empty</p>
       ) : (
-        <div className='productContainer'>
+        <div className='cartContainer'>
         {cartItems.map((item, index) => (
           
-          <div className='productItem' key={index}>
+          <div className='cartItem' key={index}>
           <div className="cart_img">
               <img src={item.image} alt='productimage' />
                              <p>{item.name}</p>
