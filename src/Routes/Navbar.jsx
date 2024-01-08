@@ -5,8 +5,6 @@ import Logo from "../Component/Home/images/LOGO.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShop ,faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 function Navbar() {
-
-
     return(
         <div id="container">
         <ul class="navbar-left">
