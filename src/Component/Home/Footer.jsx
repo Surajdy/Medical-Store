@@ -1,5 +1,12 @@
 import React from "react";
 import "./styles/FooterStyle.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faTwitter,
+  faInstagram,
+  faFacebook,
+  faLinkedinIn,
+} from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
   return (
@@ -44,16 +51,16 @@ const Footer = () => {
               <h4>follow us</h4>
               <div class="social-links">
                 <a href="#">
-                  <i class="fab fa-facebook-f"></i>
+                  <FontAwesomeIcon icon={faFacebook} />
                 </a>
                 <a href="#">
-                  <i class="fab fa-twitter"></i>
+                  <FontAwesomeIcon icon={faTwitter} />
                 </a>
                 <a href="#">
-                  <i class="fab fa-instagram"></i>
+                  <FontAwesomeIcon icon={faInstagram} />
                 </a>
                 <a href="#">
-                  <i class="fab fa-linkedin-in"></i>
+                  <FontAwesomeIcon icon={faLinkedinIn} />
                 </a>
               </div>
             </div>

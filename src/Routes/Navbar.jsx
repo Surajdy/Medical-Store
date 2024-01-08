@@ -1,21 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom"
 import "./Navbar.css";
-import Logo from "../Component/images/LOGO.png";
+import Logo from "../Component/Home/images/LOGO.png";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShop ,faRightToBracket } from '@fortawesome/free-solid-svg-icons';
 function Navbar() {
 
-    const Links=[
+    const Links =[
         {title:"Home",path:"/"},
         {title:"Products",path:"/Products"},
         {title:"Cart",path:"/Cart"},
-        {title:"Login",path:"/Login"},
-        {title:"Signup",path:"/Signup"},
-        
-        
-
-
+        {title:"LoginSignupContainer",path:"/LoginSignupContainer"},
+   
     ]
     return(
         <div id="container">
@@ -32,8 +28,8 @@ function Navbar() {
           <Link to={"/Products"}>
           <li> Pharmacy </li>
           </Link>
-          <Link to={"/Login"}>
-          <li> Login </li>
+          <Link to={""}>
+          <li> Other Services </li>
           </Link>
           
         </ul>
@@ -45,7 +41,7 @@ function Navbar() {
            <FontAwesomeIcon icon={faShop}/>
             </li>
           </Link>
-          <Link to={"/Signup"} className="a">
+          <Link to={"/LoginSignupContainer"} className="a">
            <li>
           <FontAwesomeIcon icon={faRightToBracket} />
             </li>
