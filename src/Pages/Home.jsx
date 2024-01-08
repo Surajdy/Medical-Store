@@ -1,8 +1,8 @@
 import React from "react";
-import Heroares from "../Component/Heroares";
-import MidSection from "../Component/MidSection";
+import Heroares from "../Component/Home/Heroares";
+import MidSection from "../Component/Home/MidSection";
 // import Testimonial from "../Component/Testimonial";
-import Footer from "../Component/Footer";
+import Footer from "../Component/Home/Footer";
 
 const Home = () => {
   return (
